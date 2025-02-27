@@ -11,7 +11,8 @@
 	</parent>
 	<groupId>com.ekonuma</groupId>
 	<artifactId>thepoc.spring</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
+	<packaging>jar</packaging>
 	<name>thepoc.spring</name>
 	<description>The POC Java Spring project</description>
 	<url />
@@ -55,11 +56,20 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
