@@ -4,4 +4,4 @@ COPY . /app
 RUN ./mvnw package
 COPY target/*.jar /app/target/thepoc.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/target/thepoc.jar"]
+ENTRYPOINT ["java", "-jar", "./thepoc.jar"]
