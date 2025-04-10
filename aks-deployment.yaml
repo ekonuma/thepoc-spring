@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: thepoc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: thepoc
+  template:
+    metadata:
+      labels:
+        app: thepoc
+    spec:
+      containers:
+      - name: thepoc-spring
+        image: thepoc.azurecr.io/thepoc-spring:v1
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+      - name: acr-secret
