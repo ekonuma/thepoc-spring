@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.ekonuma</groupId>
 	<artifactId>thepoc.spring</artifactId>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	<packaging>jar</packaging>
 	<name>thepoc.spring</name>
 	<description>The POC Java Spring project</description>
@@ -32,6 +32,12 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+		<dependency>
+			<groupId>org.togglz</groupId>
+			<artifactId>togglz-spring-boot-starter</artifactId>
+			<version>4.4.0</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
