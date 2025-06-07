@@ -1,7 +1,19 @@
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:17-jdk AS build
+
 WORKDIR /app
-COPY . /app
+
+COPY pom.xml .
+COPY src ./src
+
 RUN mvn clean package
-COPY /app/target/*.jar thepoc.jar
+
+FROM eclipse-temurin:17-jre-slim
+
+WORKDIR /app
+
+COPY --from=build /app/target/*.jar thepoc.jar
+
 EXPOSE 8080
+
 ENTRYPOINT ["java", "-jar", "thepoc.jar"]
+]
