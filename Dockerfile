@@ -16,4 +16,3 @@ COPY --from=build /app/target/*.jar thepoc.jar
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "thepoc.jar"]
-]
