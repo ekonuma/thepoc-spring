@@ -1,6 +1,6 @@
 package com.ekonuma.thepoc.spring.configs;
 
-import com.ekonuma.thepoc.spring.enums.FeatureFlag;
+import com.ekonuma.thepoc.spring.models.enums.FeatureFlag;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.context.annotation.Configuration;
 import org.togglz.core.Feature;

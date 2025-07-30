@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class KafkaHandler {
 
-    @KafkaListener(topics = "stock-topic", groupId = "payments-consumer-group")
+//    @KafkaListener(topics = "stock-topic", groupId = "payments-consumer-group")
     public void pizzaTopicHandler(String message){
         log.info("Evento recebido: {}", message);
     }

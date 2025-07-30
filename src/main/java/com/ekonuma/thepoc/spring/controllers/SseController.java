@@ -1,6 +1,6 @@
 package com.ekonuma.thepoc.spring.controllers;
 
-import com.ekonuma.thepoc.spring.enums.FeatureFlag;
+import com.ekonuma.thepoc.spring.models.enums.FeatureFlag;
 import com.ekonuma.thepoc.spring.services.SseService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.http.MediaType;

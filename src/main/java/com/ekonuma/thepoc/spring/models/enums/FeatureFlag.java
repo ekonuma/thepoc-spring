@@ -1,4 +1,4 @@
-package com.ekonuma.thepoc.spring.enums;
+package com.ekonuma.thepoc.spring.models.enums;
 
 import org.togglz.core.Feature;
 import org.togglz.core.annotation.EnabledByDefault;
